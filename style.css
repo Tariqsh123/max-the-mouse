@@ -109,12 +109,215 @@
   }
 }
 
-.hero-main{
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.hero-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 10px 60px 10px;
+  background-color: #c6fffa;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap; /* allows column on small screens */
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #fceb58;
+  color: #000;
+  font-size: 14px !important;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-left h1 {
+  font-size: 72px;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  color: #dc3545;
+}
+
+.hero-left h1 span {
+  color: #0a74da; /* dark sky blue */
+}
+
+.hero-left h4 {
+  font-size: 36px;
+  color: #000;
+  font-family: "Caveat", cursive;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+}
+
+.hero-left p {
+  font-size: 14px !important;
+  font-family: cursive;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn-green {
+  background-color: #68ff8b;
+  color: #fff;
+}
+.btn-red {
+  background-color: #ff7784;
+  color: #fff;
+}
+.hero-right {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-right-image{
+  width: 90%;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.hero-right-image:hover{
+  transform: rotate(-5deg);
+}
+/* AGE CIRCLE */
+.age-circle {
+  position: absolute;
+  top: -15px;   /* little above image */
+  right: 30px; /* little outside top-right corner */
+  background-color: #ffeb3b; /* yellow bg */
+  color: #8b4513; /* brown text */
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  border-radius: 50%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+/* UP AND DOWN FLOAT ANIMATION */
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+/* FLOATING IMAGES */
+.float-img-left1, .float-img-left2, .float-img-right, .h1-left-img {
+  position: absolute;
+  width: 50px; /* smaller size */
+  height: 50px;
+  z-index: 2;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+.h1-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.h1-left-img {
+  width: 40px;
+  height: 40px;
+  animation: float 2.5s ease-in-out infinite alternate;
+}
+
+.float-img-left1 {
+  top: 250px; /* adjust according to spacing above h4 */
+  left: 320px;
+}
+
+.float-img-left2 {
+  top: 120px; /* adjust according to spacing after h1 */
+  left: 250px;
+}
+
+.float-img-right {
+  top: -50px; /* above right image */
+  right: 250px;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
     align-items: center;
-    padding: 120px 10px 60px 10px;
-    background-color: #00b8a934;
+    text-align: center;
+  }
+  .hero-left h4 {
+    font-size: 25px;
+  }
+
+  .hero-left p {
+    font-size: 16px !important;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+  .hero-buttons button{
+    font-size: 18px;
+  }
+.float-img-left2 {
+    top: 83px;
+}
+.float-img-right {
+    top: -50px;
+    right: 280px;
+}
+}
+.hero-wave {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    bottom: 10px;
+    line-height: 0;
+}
+
+.hero-wave svg {
+    display: block;
+    width: 100%;     /* stretch SVG full width */
+    height: 100px;   /* wave height */
 }
