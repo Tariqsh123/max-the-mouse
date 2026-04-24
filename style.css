@@ -115,7 +115,7 @@
   justify-content: center;
   align-items: center;
   padding: 120px 10px 60px 10px;
-  background-color: #c6fffa;
+  background-color: #b8f8c7;
 }
 
 .hero-container {
@@ -185,7 +185,7 @@
   cursor: pointer;
 }
 .btn-green {
-  background-color: #68ff8b;
+  background-color: #0a74da;
   color: #fff;
 }
 .btn-red {
@@ -409,7 +409,7 @@
 
 .home-about-right p {
   color: #000;
-  font-size: small;
+  font-size: medium;
   font-family: cursive;
   margin-bottom: 15px;
 }
@@ -452,7 +452,7 @@
   color: #000; /* black text */
   margin: 0;
   font-family: cursive;
-  font-size: small;
+  font-size: medium;
 }
 
 /* RESPONSIVE */
@@ -579,7 +579,7 @@
 }
 
 .cast-content p {
-  font-size: 14px;
+  font-size: large;
   color: #333;
   margin-bottom: 12px;
   line-height: 1.4;
@@ -587,7 +587,7 @@
 }
 
 .cast-content a {
-    font-size: 14px;
+    font-size: large;
   color: #333;
   margin-bottom: 12px;
   line-height: 1.4;
@@ -669,7 +669,7 @@
   font-family: "Caveat", cursive;
   text-align: left;
   padding: 0 30px;
-  font-size: 16px;
+  font-size: x-large;
   line-height: 1.6;
   width: 100%;
 }
@@ -793,7 +793,7 @@
 }
 
 .fun-card p {
-  font-size: 14px;
+  font-size: large;
   color: #000;
   margin: 5px 0 10px 0;
 }
@@ -924,7 +924,7 @@
 }
 
 .author-right p {
-  font-size: 16px;
+  font-size: large;
   font-family: "Caveat", cursive;
   color: #000;
   margin-bottom: 15px;
@@ -1052,7 +1052,7 @@
 }
 
 .touch-card p {
-  font-size: 16px;
+  font-size: large;
   color: #333;
   font-family: "Caveat", cursive;
   margin-bottom: 20px;
@@ -1075,10 +1075,6 @@
   color: #fff;
 }
 
-.btn-red:hover {
-  background-color: #d25c3e;
-}
-
 .subscribe-row {
   display: flex;
   gap: 10px;
@@ -1093,13 +1089,10 @@
 }
 
 .btn-blue {
-  background-color: #68b6ec;
+  background-color: #0a74da;
   color: #fff;
 }
 
-.btn-blue:hover {
-  background-color: #4f98d4;
-}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -1154,5 +1147,5 @@ footer h2{
   font-family: "Caveat", cursive;
   width: 100%;
   color: white;
-  font-size: medium !important;  
+  font-size: large !important;  
 }
