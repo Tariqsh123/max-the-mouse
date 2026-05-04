@@ -131,6 +131,10 @@
 .hero-left {
   flex: 1;
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-badge {
@@ -147,6 +151,8 @@
 .hero-left h1 {
   font-size: 72px;
   margin: 0 0 20px 0;
+  text-align: center;
+  width: 100%;
   line-height: 1.2;
   color: #dc3545;
 }
@@ -158,6 +164,7 @@
 .hero-left h4 {
   font-size: 36px;
   color: #000;
+  text-align: center;
   font-family: "Caveat", cursive;
   margin: 0 0 15px 0;
   font-weight: 400;
@@ -168,6 +175,7 @@
   font-family: cursive;
   color: gray;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .hero-buttons {
@@ -386,6 +394,11 @@
 /* RIGHT CONTENT */
 .home-about-right {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
   min-width: 300px;
 }
 
@@ -463,6 +476,7 @@
   }
 
   .feature-box {
+    flex-direction: column;
     flex: 1 1 100%;
   }
 
@@ -669,6 +683,7 @@
   font-family: "Caveat", cursive;
   text-align: left;
   padding: 0 30px;
+  text-align: center;
   font-size: x-large;
   line-height: 1.6;
   width: 100%;
@@ -897,6 +912,11 @@
 .author-right {
   flex: 1;
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .author-section-badge {
