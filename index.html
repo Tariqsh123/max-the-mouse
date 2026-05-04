@@ -96,6 +96,8 @@ toggle.addEventListener("click", () => {
     </svg>
 </div>
 
+
+
 <section class="home-about">
   <div class="home-about-container">
     <!-- LEFT SECTION -->
@@ -152,6 +154,79 @@ toggle.addEventListener("click", () => {
   </div>
 </section>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<section class="catalog-section">
+  <div class="catalog-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="catalog-left">
+      <h2>Catalogs</h2>
+      <p>Browse a full selection of our latest catalogs.</p>
+      <a href="#" class="catalog-btn">VIEW ALL CATALOGS</a>
+    </div>
+
+    <!-- RIGHT SLIDER -->
+    <div class="catalog-right">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="https://d5i0fhmkm8zzl.cloudfront.net/2026-04/teaching-solutions-catalog-cover-1%29_0.jpg"/>
+            <h4><span>NEW!</span> Teaching Solutions</h4>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="https://d5i0fhmkm8zzl.cloudfront.net/2026-02/pres.png"/>
+            <h4><span>NEW!</span> Tangerine Press</h4>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="https://d5i0fhmkm8zzl.cloudfront.net/2026-03/klutz.png"/>
+            <h4><span>NEW!</span> Klutz</h4>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="https://d5i0fhmkm8zzl.cloudfront.net/2024-11/pos_catalog%20%281%29.webp"/>
+            <h4>Power of Story</h4>
+          </div>
+
+        </div>
+
+        <!-- arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    600: { slidesPerView: 2 },
+    1000: { slidesPerView: 3 }
+  }
+});
+</script>
 
 <section class="home-cast-main">
   <div class="home-cast-inner">
