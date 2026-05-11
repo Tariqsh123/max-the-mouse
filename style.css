@@ -116,14 +116,14 @@
   justify-content: center;
   align-items: center;
   padding: 120px 10px 60px 10px;
-  background-color: #b8f8c7;
+  background-color: #e2fffd;
 }
 
 .hero-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1200px;
   width: 100%;
   gap: 40px;
   flex-wrap: wrap; /* allows column on small screens */
@@ -134,8 +134,8 @@
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .hero-badge {
@@ -152,7 +152,7 @@
 .hero-left h1 {
   font-size: 72px;
   margin: 0 0 20px 0;
-  text-align: center;
+  text-align: left;
   width: 100%;
   line-height: 1.2;
   color: #dc3545;
@@ -176,7 +176,7 @@
   font-family: cursive;
   color: gray;
   margin-bottom: 25px;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-buttons {
@@ -295,12 +295,21 @@
     align-items: center;
     text-align: center;
   }
+  .hero-left{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-left h1{
+    text-align: center;
+  }
   .hero-left h4 {
     font-size: 25px;
   }
 
   .hero-left p {
     font-size: 16px !important;
+    text-align: center;
   }
 
   .hero-buttons {
@@ -338,7 +347,7 @@
 }
 
 .home-about-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -396,9 +405,9 @@
 .home-about-right {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
   flex-direction: column;
   min-width: 300px;
 }
@@ -475,6 +484,11 @@
     flex-direction: column;
     align-items: center;
   }
+  .home-about-right{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 
   .feature-box {
     flex-direction: column;
@@ -494,7 +508,7 @@
   justify-content: center;
   align-items: center;
   padding: 60px 10px;
-  background-color: #b8f8c7;
+  background-color: #e2fffd;
 }
 .home-cast-inner{
   height: fit-content;
@@ -732,7 +746,8 @@
 .home-adventure-main-contianer{
   height: fit-content;
   width: 100%;
-  background: linear-gradient(135deg, hsl(45 95% 80%) 0%, hsl(20 90% 78%) 50%, hsl(345 80% 85%) 100%);
+  background: rgb(255, 226, 226);
+  /* background: linear-gradient(135deg, hsl(45 95% 80%) 0%, hsl(20 90% 78%) 50%, hsl(345 80% 85%) 100%); */
   padding: 60px 10px;
   display: flex;
   flex-direction: column;
@@ -844,11 +859,12 @@
 }
 
 .home-about-author-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
   align-items: center;
 }
 
@@ -919,9 +935,9 @@
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .author-section-badge {
@@ -980,7 +996,11 @@
     gap: 100px;
     text-align: center;
   }
-
+.author-right{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
   .author-badges-row {
     justify-content: center;
   }
@@ -1142,7 +1162,7 @@
 }
 
 footer{
-  background-color: #d25c3e;
+  background-color: #494949;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1177,7 +1197,8 @@ footer h2{
 
 .catalog-section {
   padding: 60px 20px;
-  background: linear-gradient(135deg, hsl(45 95% 80%) 0%, hsl(20 90% 78%) 50%, hsl(345 80% 85%) 100%);
+  background: rgb(255, 226, 226);
+  /* background: linear-gradient(135deg, hsl(45 95% 80%) 0%, hsl(20 90% 78%) 50%, hsl(345 80% 85%) 100%); */
 }
 
 .catalog-container {
